@@ -1,0 +1,722 @@
+/* Шрифты */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/Gilroy-Regular.woff2), url(./fonts/Gilroy-Regular.woff);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/Gilroy-Light.woff2), url(./fonts/Gilroy-Light.woff);
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./fonts/Gilroy-ExtraBold.woff2), url(./fonts/Gilroy-ExtraBold.woff);
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url(./fonts/DINPro.woff2), url(./fonts/DINPro.woff);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/* / Шрифты */
+
+
+/* Общие стили */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.wrapper {
+    padding-left: 105px;
+}
+
+.inline-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.transition-slide-to-left {
+    transform: translateX(100%) !important;
+}
+
+.transition-slide-to-right {
+    transform: translateX(-100%) !important;
+}
+
+.home {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 15px;
+    z-index: 2;
+}
+
+
+/* / Общие стили */
+
+
+/* НАЧАЛО СТИЛЕЙ СЛАЙДА НОМЕР 1 */
+
+.hello-txt {
+    font-family: 'DINPRO', serif;
+    font-size: 27px;
+    font-weight: 400;
+    padding-top: 80px;
+}
+
+.title-txt {
+    font-family: 'Gilroy', serif;
+    font-weight: 300;
+    font-size: 114px;
+}
+
+.din {
+    font-family: 'Gilroy', serif;
+    font-weight: 800;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+img.pic1 {
+    position: absolute;
+    left: 0;
+    top: 73px;
+}
+
+img.pic2 {
+    position: absolute;
+    top: 61px;
+    left: 736px;
+}
+
+img.pic3 {
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+    left: 880px;
+}
+
+img.pic4 {
+    position: absolute;
+    top: 130px;
+    left: 465px;
+}
+
+img.pic5 {
+    position: absolute;
+    top: 30px;
+    left: 959px;
+}
+
+img.pic6 {
+    position: absolute;
+    top: 503px;
+    left: 58px;
+    z-index: -1;
+}
+
+img.pic7 {
+    position: absolute;
+    top: 593px;
+    left: 42px;
+}
+
+img.pic8 {
+    position: absolute;
+    top: 631px;
+    left: 389px;
+}
+
+img.pic9 {
+    position: absolute;
+    top: 642px;
+    left: 584px;
+}
+
+@keyframes pic3-move {
+    0% {
+        top: -50px;
+        left: -40px;
+    }
+    50% {
+        top: -100px;
+        left: 5px;
+    }
+    100% {
+        top: 10px;
+        left: 30px;
+    }
+}
+
+.motion-pic3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: pic3-move 3s infinite alternate-reverse linear;
+}
+
+@keyframes pic6-move {
+    0% {
+        top: 25px;
+        left: 29px;
+    }
+    100% {
+        top: 50px;
+        left: 60px;
+    }
+}
+
+.motion-pic6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: pic6-move 1s infinite alternate ease-in-out;
+}
+
+@keyframes pic9-grow {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(115%);
+    }
+}
+
+.motion-pic9 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: pic9-grow 4s infinite alternate-reverse linear;
+}
+
+
+/* КОНЕЦ СТИЛЕЙ СЛАЙДА НОМЕР 1 */
+
+
+/* НАЧАЛО СТИЛЕЙ СЛАЙДА НОМЕР 2 */
+
+.img1 {
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: 365px;
+}
+
+.img2 {
+    z-index: -1;
+    position: absolute;
+    top: 95px;
+    left: 585px;
+}
+
+.img3 {
+    z-index: -1;
+    position: absolute;
+    top: 75px;
+    left: 717px;
+}
+
+.img4 {
+    z-index: -1;
+    position: absolute;
+    top: 410px;
+    left: 870px;
+}
+
+.img5 {
+    z-index: -1;
+    position: absolute;
+    top: 517px;
+    left: 870px;
+}
+
+.message-text {
+    font-family: 'DINPro', serif;
+    font-weight: 400;
+    font-size: 27px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.scroll-section {
+    /* меняем направление, чтобы скрол отображался слева */
+    direction: rtl;
+    position: relative;
+    overflow-y: scroll;
+    padding: 27px;
+    height: 327px;
+    width: 701px;
+    font-family: 'DINPro', serif;
+    font-size: 25px;
+    font-weight: 400;
+    background: white;
+    border-radius: 60px;
+    -webkit-box-shadow: 52px 53px 71px 6px rgba(145, 220, 254, 0.2), -54px -54px 71px 6px rgba(145, 220, 254, 0.2);
+    -moz-box-shadow: 52px 53px 71px 6px rgba(145, 220, 254, 0.2), -54px -54px 71px 6px rgba(145, 220, 254, 0.2);
+    box-shadow: 52px 53px 71px 6px rgba(145, 220, 254, 0.2), -54px -54px 71px 6px rgba(145, 220, 254, 0.2);
+}
+
+.scroll-section .fill-white {
+    position: sticky;
+    background-color: #fff;
+    bottom: -27px;
+    left: 0;
+    width: 103%;
+    height: 27px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.scroll-section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.scroll-section::-webkit-scrollbar-thumb {
+    background: #8e406a;
+    border-radius: 10px;
+    width: 25px;
+}
+
+.scroll-section::-webkit-scrollbar-thumb:hover {
+    background: #e196b7;
+}
+
+.scroll-section::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll-text {
+    direction: ltr;
+    font-size: 20px;
+}
+
+.label2 {
+    position: absolute;
+    bottom: 27px;
+    left: 130px;
+}
+
+@keyframes img1-grow {
+    0% {
+        transform: scale(70%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.motion-img1 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: img1-grow 3s alternate linear;
+}
+
+@keyframes img2-grow {
+    0% {
+        transform: scale(70%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.motion-img2 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: img2-grow 3s alternate linear;
+}
+
+@keyframes img3-grow {
+    0% {
+        transform: scale(70%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.motion-img3 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: img3-grow 3s alternate linear;
+}
+
+@keyframes img4-grow {
+    0% {
+        transform: scale(70%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.motion-img4 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: img4-grow 3s alternate linear;
+}
+
+@keyframes img5-grow {
+    0% {
+        transform: scale(70%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.motion-img5 {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: img5-grow 3s alternate linear;
+}
+
+
+/* КОНЕЦ СТИЛЕЙ СЛАЙДА НОМЕР 2 */
+
+
+/* НАЧАЛО СТИЛЕЙ СЛАЙДА НОМЕР 3 */
+
+.sides {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottle {
+    flex: 1;
+}
+
+.bottle-pic {
+    z-index: 1;
+    position: absolute;
+    top: 71px;
+    left: 9px;
+}
+
+.bubble-pic1 {
+    z-index: -1;
+    position: absolute;
+    top: 212px;
+    left: 80px;
+}
+
+.bubble-pic2 {
+    z-index: -1;
+    position: absolute;
+    top: 317px;
+    left: 186px;
+}
+
+.bubble-pic3 {
+    z-index: -1;
+    position: absolute;
+    top: 65.5px;
+    left: 198px;
+}
+
+.bubble-pic4 {
+    z-index: -1;
+    position: absolute;
+    top: 591px;
+    left: 243px;
+}
+
+.bubble-pic5 {
+    z-index: 1;
+    position: absolute;
+    top: 155.5px;
+    left: 184.5px;
+}
+
+.bubble-pic6 {
+    z-index: 100;
+    position: absolute;
+    top: 703px;
+    left: 183px;
+}
+
+.bubble-pic7 {
+    z-index: -1;
+    position: absolute;
+    top: 453.5px;
+    left: 12px;
+}
+
+.bubble-pic8 {
+    z-index: 1;
+    position: absolute;
+    top: 553.5px;
+    left: 22.5px;
+}
+
+.slide3__content {
+    flex: 2;
+}
+
+.title-brend {
+    font-family: 'Gilroy', serif;
+    font-weight: 400;
+    font-size: 95px;
+    font-style: normal;
+}
+
+.title-brend .title-xy {
+    font-family: 'Gilroy', serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 95px;
+    margin-left: 10px;
+}
+
+.slide3__content .title .text {
+    font-family: 'DINPro', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+    margin-top: 92px;
+}
+
+.slide3__content .cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    padding-right: 80px;
+}
+
+.slide3__content .cards .left-side {
+    flex: 2;
+}
+
+.slide3__content .cards .right-side {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slide3__content .cards .card {
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+    padding-top: 50px;
+    height: 70px;
+    -webkit-box-shadow: 52px 53px 71px 6px rgba(145, 220, 254, 0.2), -54px -54px 71px 6px rgba(145, 220, 254, 0.2);
+    -moz-box-shadow: 52px 53px 71px 6px rgba(145, 220, 254, 0.2), -54px -54px 71px 6px rgba(145, 220, 254, 0.2);
+    box-shadow: 52px 53px 71px 6px rgba(145, 220, 254, 0.2), -54px -54px 71px 6px rgba(145, 220, 254, 0.2);
+}
+
+.slide3__content .cards .card.card--big {
+    height: 190px;
+}
+
+.slide3__content .cards .card .card__description {
+    font-size: 25px;
+}
+
+.slide3__content .cards .card .card__icon {
+    position: absolute;
+    top: -32px;
+}
+
+@keyframes bubble1-move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 5px;
+        left: 30px;
+    }
+}
+
+.motion-bubble1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bubble1-move 1s infinite alternate-reverse linear;
+}
+
+@keyframes bubble2-grow {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(120%);
+    }
+}
+
+.motion-bubble2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: bubble2-grow 3s infinite alternate linear;
+}
+
+@keyframes bubble3-move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 40px;
+        left: 40px;
+    }
+}
+
+.motion-bubble3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bubble3-move 2s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes bubble4-move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: -30px;
+        left: 80px;
+    }
+}
+
+.motion-bubble4 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: bubble4-move 1.5s infinite alternate-reverse ease-out;
+}
+
+@keyframes bubble5-move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 40px;
+        left: 30px;
+    }
+}
+
+.motion-bubble5 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: bubble5-move 1s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes bubble7-grow {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(120%);
+    }
+}
+
+.motion-bubble7 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: bubble7-grow 2s infinite alternate ease-in;
+}
+
+@keyframes bubble8-move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+        top: 15px;
+        left: px;
+    }
+    100% {
+        top: 30px;
+        left: 100px;
+    }
+}
+
+.motion-bubble8 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: bubble8-move 1.5s infinite alternate-reverse ease-out;
+}
+
+
+/* КОНЕЦ СТИЛЕЙ СЛАЙДА 3 */
